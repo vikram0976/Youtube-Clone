@@ -1,0 +1,135 @@
+#frames {
+  margin-top: 1rem;
+  width: 300px;
+  height: 170px;
+}
+
+#videoes {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 2%;
+  /* border: 1px solid red; */
+}
+#header {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+#header:hover {
+  cursor: pointer;
+}
+#icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+#homeIcon {
+  margin-left: 15%;
+}
+#utubeIcon img {
+  height: 3rem;
+  width: 7rem;
+  margin-left: 15%;
+}
+#search-box {
+  margin-left: 10%;
+  /* display:flex;
+  justify-content: space-between; */
+}
+
+#search-box span i {
+  border-radius: 15%;
+  margin-left: 1rem;
+  box-shadow: rgb(254, 254, 255) 0px 0px 0px 3px,
+    rgb(247, 252, 247) 0px 0px 0px 6px, rgb(252, 251, 247) 0px 0px 0px 9px,
+    rgb(252, 250, 248) 0px 0px 0px 12px, rgb(252, 249, 249) 0px 0px 0px 15px;
+}
+#search-box > #query {
+  width: 550px;
+  height: 2.2rem;
+}
+#submt {
+  height: 2.5rem;
+  margin-left: -4px;
+  width: 60px;
+}
+#search-box ::placeholder {
+  color: grey;
+  font-size: 1.2em;
+  font-weight: 530;
+}
+#alert {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#iconWithvideo {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+#logoIcon {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  /* border: 1px solid black; */
+  /* background-color: gray; */
+}
+
+#logoIcon > div {
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red;; */
+}
+#logoIcon div :hover {
+  cursor: pointer;
+  /* background-color: gray; */
+
+  box-shadow: rgb(254, 254, 255) 0px 0px 0px 3px,
+    rgb(243, 245, 243) 0px 0px 0px 6px, rgb(253, 253, 253) 0px 0px 0px 9px,
+    rgb(252, 250, 248) 0px 0px 0px 12px, rgb(253, 253, 253) 0px 0px 0px 15px;
+}
+#logoIcon p {
+  font-size: 0.7rem;
+}
+#logoIcon .n {
+  margin-left: 20%;
+}
+#videoes {
+  width: 95%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 1%;
+  margin-left: 1rem;
+  /* border: 1px solid red; */
+}
+#frames{
+  border:none;
+}
+#divOf_ {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+
+#videoname {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+#channel {
+  margin-left: 1rem;
+  margin-top: -3%;
+  font-family: sans-serif;
+}

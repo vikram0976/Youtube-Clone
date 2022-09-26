@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Es6-with you tube</title>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="utube.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="icon">
+        <div id="homeIcon"><i class="fa-solid fa-bars"></i></div>
+        <div id="utubeIcon">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgDC5KbVCgEGLQgwB22LXxPNb4jBvyHwLmw&usqp=CAU"
+            alt="youtube"
+          />
+        </div>
+      </div>
+
+      <div id="search-box">
+        <input type="text" placeholder="Search" id="query" />
+        <button id="submt" onclick="searchQuery()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="1rem"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="currentColor"
+              d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9Z"
+            />
+          </svg>
+        </button>
+        <span><i class="fa-solid fa-microphone fa-xl"></i></span>
+      </div>
+
+      <div id="alert">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="1.7em"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="currentColor"
+              d="M18 15h-4v-4h-2v4H8v2h4v4h2v-4h4v-2z"
+            />
+            <path
+              fill="currentColor"
+              d="M21 26H4a2.002 2.002 0 0 1-2-2V8a2.002 2.002 0 0 1 2-2h17a2.002 2.002 0 0 1 2 2v4.057l5.419-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.581.814L23 19.944V24a2.002 2.002 0 0 1-2 2ZM4 8v16.001L21 24v-6a1 1 0 0 1 1.581-.814L28 21.056V10.944l-5.419 3.87A1 1 0 0 1 21 14V8Z"
+            />
+          </svg>
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="1.7em"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742c-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+            />
+          </svg>
+        </div>
+        <div><i class="fa-brands fa-buromobelexperte fa-xl"></i></div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="1.7em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M8 18h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2Zm0-2V4h12v12H8Z"
+            />
+            <path fill="currentColor" d="M2 8h2v12h12v2H4a2 2 0 0 1-2-2V8Z" />
+            <path
+              d="M10 14h9l-3.75-5.444l-2.25 3.11l-.75-.777L10 14Zm.75-5.833c0 .644.504 1.166 1.125 1.166S13 8.811 13 8.167C13 7.522 12.496 7 11.875 7s-1.125.522-1.125 1.167Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- <input type="text" id="query" />
+    <button id="submt" onclick="searchQuery()">Submit</button> -->
+    <div id="iconWithvideo">
+      <div id="logoIcon">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m2 13l9.293-9.293a1 1 0 0 1 1.414 0L22 13h-2v8a1 1 0 0 1-1 1h-5v-7h-4v7H5a1 1 0 0 1-1-1v-8H2Z"
+            />
+          </svg>
+        </div>
+        <p class="n">Home</p>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="m306.7 325.1l-144.3 55.5c-20.3 7.5-38.5-11.6-31-31l55.5-144.3c3.2-8.5 9.9-15.2 18.4-18.4l144.3-55.5c19.4-7.5 38.5 10.7 31 31l-55.5 144.3c-3.2 8.5-9.9 15.2-18.4 18.4zM255.1 224c-16.8 0-32 14.3-32 32s15.2 32 32 32c18.6 0 32.9-14.3 32.9-32s-14.3-32-32.9-32zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0s256 114.6 256 256zM256 48C141.1 48 48 141.1 48 256s93.1 208 208 208s208-93.1 208-208S370.9 48 256 48z"
+            />
+          </svg>
+        </div>
+        <p class="n">Explore</p>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="4" />
+              <path d="m15 12l-5-3v6l5-3Z" />
+            </g>
+          </svg>
+        </div>
+        <p class="n">Shorts</p>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 32 32"
+          >
+            <path d="M13 15v8l7-4l-7-4z" />
+            <path
+              d="M26 28H6a2.002 2.002 0 0 1-2-2V12a2.002 2.002 0 0 1 2-2h20a2.002 2.002 0 0 1 2 2v14a2.002 2.002 0 0 1-2 2zM6 12v14h20V12zm0-6h20v2H6zm2-4h16v2H8z"
+            />
+          </svg>
+        </div>
+        <p>Subsription</p>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zM12 5.5v9l6-4.5z"
+            />
+          </svg>
+        </div>
+        <p class="n">Library</p>
+      </div>
+
+      <div id="videoes"></div>
+    </div>
+  </body>
+</html>
+
+<script src="youtube.js"></script>
+
+<!-- //icon img -->
+<!-- https://cdn.vox-cdn.com/thumbor/0kpe316UpZWk53iw3bOLoJfF6hI=/0x0:1680x1050/1400x1400/filters:focal(706x391:974x659):format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/56414325/YTLogo_old_new_animation.0.gif -->
+<!-- //src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgDC5KbVCgEGLQgwB22LXxPNb4jBvyHwLmw&usqp=CAU" -->
+<!-- <iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/3qS7mFl75sY"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe> -->

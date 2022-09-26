@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      #video_cur {
+        width: 100%;
+        height: 40rem;
+      }
+      #frames {
+        width: 100%;
+        height: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video_cur"></div>
+  </body>
+</html>
+
+<script>
+  let video_cur = document.querySelector("#video_cur");
+  let video = JSON.parse(localStorage.getItem("video"));
+  console.log(video);
+
+  let iframe = document.createElement("iframe");
+  iframe.src = `https://www.youtube.com/embed/${video.videoId}`;
+  iframe.setAttribute("id", "frames");
+  iframe.allow =
+    "autoplay; fullscreen; picture-in-picture; xr-spatial-tracking; clipboard-write";
+
+  let vid_name = document.createElement("h4");
+  vid_name.innerText = video.title;
+
+  let channel_name = document.createElement("p");
+  channel_name.innerHTML = video.channelTitle;
+
+  video_cur.append(iframe, vid_name, channel_name);
+</script>
